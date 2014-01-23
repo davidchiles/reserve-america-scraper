@@ -1,6 +1,9 @@
+var http = require('http');
 (function () {
   "use strict";
-  var $ = require('jquery'),
+    var jsdom = require("jsdom");
+    var window = jsdom.jsdom().createWindow();
+    var $ = require('jquery/dist/jquery')(window),   //require('jquery'),
       request = require('request'),
       querystring = require('querystring'),
       growler = require('growler'),
@@ -143,3 +146,7 @@
   if (interval > 0) setInterval(scraper, interval);
 
 }) ();
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(process.env.PORT);
