@@ -1,7 +1,7 @@
 var http = require('http');
 (function () {
   "use strict";
-    var jsdom = require("jsdom");
+    var jsdom = require('jsdom');
     var window = jsdom.jsdom().createWindow();
     var $ = require('jquery/dist/jquery')(window),   //require('jquery'),
       request = require('request'),
