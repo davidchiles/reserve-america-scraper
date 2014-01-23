@@ -1,3 +1,5 @@
+![Codeship Health](https://www.codeship.io/projects/0dcf5980-6613-0131-7f40-6e45f76890ff/status)
+
 ## Example Usage
 `node scraper.js '--campgrounds=Bahia_Honda_Sp,Curry_Hammock_Sp,Long_Key_Sp' --state=FL --length=23 --electric=30`
 `--arrival=1/6/13 --departure=2/15/13 --nights=4 --notify_boxcar --interval=15`
