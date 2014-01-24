@@ -1,4 +1,3 @@
-var http = require('http');
 (function () {
   "use strict";
     var jsdom = require('jsdom');
@@ -146,7 +145,3 @@ var http = require('http');
   if (interval > 0) setInterval(scraper, interval);
 
 }) ();
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(process.env.PORT);
