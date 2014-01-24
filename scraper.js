@@ -132,7 +132,7 @@ var http = require('http');
             }
           }
           else {
-            var date = (departure) ? ' from ' + arrival + ' to ' + departure : ' on ' + arvdate;
+            var date = (departure) ? ' from ' + arrival + ' to ' + departure : ' on ' + arrival;
             console.log('Sorry, no preferred campsites found at ' + campground_fullname + date + ' for ' + nights + ' night' + ((nights>1) ? 's' : '') + '.');
           }
         });
