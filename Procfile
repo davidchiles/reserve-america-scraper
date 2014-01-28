@@ -1,1 +1,1 @@
-web: node scraper.js '--campgrounds=Bahia_Honda_Sp,Curry_Hammock_Sp,Long_Key_Sp' --state=FL --length=27 --arrival=07/01/14 --departure=7/14/14 --nights=3 --false_positives_max=5 --notify_pushover --interval=15 --config_path=/
+web: node scraper.js '--campgrounds=Bahia_Honda_Sp,Curry_Hammock_Sp,Long_Key_Sp' --state=FL --length=27 --arrival=07/01/14 --departure=07/14/14 --nights=3 --false_positives_max=5 --notify_pushover --interval=5 --config_path=/
