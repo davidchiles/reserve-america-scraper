@@ -55,7 +55,7 @@ var http = require('http');
 
       var query = querystring.stringify({ parkId:parkId, siteType:'2001', expfits:true, eqplen:length, hookup:electric, 
                   waterfront:waterfront, range:range,
-                  calarvdate:arrival, lengthOfStay:nights, page:'calendar',
+                  arvdate:arrival, enddate:departure, lengthOfStay:nights, page:'calendar',
                   contractCode:state, siteTypeFilter:'RV or Tent' }),
           baseurl = 'http://www.reserveamerica.com',
           action = '/camping/' + campground + '/r/campsiteCalendar.do?',
